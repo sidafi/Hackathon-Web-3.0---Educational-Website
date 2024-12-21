@@ -1,0 +1,179 @@
+/* === Start === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+/* === Container === */
+.container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+/* === Sidebar (Kiri) === */
+.sidebar {
+    width: 210px;
+    background-color: #1A1A1A;
+    color: white;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    color: #FFBD39;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Sidebar links */
+.sidebar ul li a.active {
+    padding: 15px 80px 15px 120px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #FFBD39;
+    color: #1A1A1A;
+    position: relative;
+    transform: translateX(20px);
+    text-indent: -100px;
+}
+
+/* === Sidebar Buttons === */
+.sidebar-buttons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.sidebar-btn {
+    background-color: #FFBD39;
+    color: #1A1A1A;
+    font-size: 16px;
+    padding: 10px 16px;
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    justify-content: flex-start;
+    max-width: 200px;
+}
+
+.sidebar-btn:hover {
+    background-color: #d6a72f;
+}
+
+.sidebar-btn i {
+    font-size: 18px;
+}
+
+.sidebar-btn.active {
+    background-color: #e9ad34c9;
+    color: white;
+}
+
+/* === Main Content === */
+.main-content {
+    flex: 2;
+    background-color: #FFBD39;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* === AI Section (Kanan) === */
+.ai-section {
+    width: 300px;
+    background-color: #1A1A1A;
+    color: white;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.ai-section h2 {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px; 
+}
+
+/* === Input Container (Button + Textarea) === */
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* === Microphone Button === */
+.microphone-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #FFBD39;
+    color: #1A1A1A;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.microphone-btn:hover {
+    background-color: #e9ad34c9;
+}
+
+/* === Textarea === */
+.input-text {
+    width: 80%; 
+    height: 40px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: none;
+    font-size: 14px;
+}
